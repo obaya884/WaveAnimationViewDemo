@@ -13,9 +13,11 @@
 		66CA462024AC67CC0052946E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CA461E24AC67CC0052946E /* Main.storyboard */; };
 		66CA462224AC67D10052946E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CA462124AC67D10052946E /* Assets.xcassets */; };
 		66CA462524AC67D10052946E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CA462324AC67D10052946E /* LaunchScreen.storyboard */; };
+		73A31AC3D4A0A135B9A55141 /* Pods_WaveAnimationViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9389864060A2E37A1EAB779A /* Pods_WaveAnimationViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15DCE866BF99A9CF738368FC /* Pods-WaveAnimationViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveAnimationViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-WaveAnimationViewDemo/Pods-WaveAnimationViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		66CA461524AC67CC0052946E /* WaveAnimationViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAnimationViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CA461824AC67CC0052946E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66CA461A24AC67CC0052946E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		66CA462124AC67D10052946E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66CA462424AC67D10052946E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66CA462624AC67D10052946E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9389864060A2E37A1EAB779A /* Pods_WaveAnimationViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaveAnimationViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CA787039E299AD1ECE8619 /* Pods-WaveAnimationViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaveAnimationViewDemo.release.xcconfig"; path = "Target Support Files/Pods-WaveAnimationViewDemo/Pods-WaveAnimationViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A31AC3D4A0A135B9A55141 /* Pods_WaveAnimationViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5B4A54F49E155F9791328C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15DCE866BF99A9CF738368FC /* Pods-WaveAnimationViewDemo.debug.xcconfig */,
+				C6CA787039E299AD1ECE8619 /* Pods-WaveAnimationViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		66CA460C24AC67CC0052946E = {
 			isa = PBXGroup;
 			children = (
 				66CA461724AC67CC0052946E /* WaveAnimationViewDemo */,
 				66CA461624AC67CC0052946E /* Products */,
+				1A5B4A54F49E155F9791328C /* Pods */,
+				945D1C14FEC88CC03483EE91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = WaveAnimationViewDemo;
 			sourceTree = "<group>";
 		};
+		945D1C14FEC88CC03483EE91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9389864060A2E37A1EAB779A /* Pods_WaveAnimationViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66CA462924AC67D10052946E /* Build configuration list for PBXNativeTarget "WaveAnimationViewDemo" */;
 			buildPhases = (
+				C3E8AAF4032BB42AC30CA071 /* [CP] Check Pods Manifest.lock */,
 				66CA461124AC67CC0052946E /* Sources */,
 				66CA461224AC67CC0052946E /* Frameworks */,
 				66CA461324AC67CC0052946E /* Resources */,
+				2C02448E14606E50AD9A5291 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C02448E14606E50AD9A5291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveAnimationViewDemo/Pods-WaveAnimationViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaveAnimationViewDemo/Pods-WaveAnimationViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaveAnimationViewDemo/Pods-WaveAnimationViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3E8AAF4032BB42AC30CA071 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaveAnimationViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66CA461124AC67CC0052946E /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		66CA462A24AC67D10052946E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DCE866BF99A9CF738368FC /* Pods-WaveAnimationViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		66CA462B24AC67D10052946E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6CA787039E299AD1ECE8619 /* Pods-WaveAnimationViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
