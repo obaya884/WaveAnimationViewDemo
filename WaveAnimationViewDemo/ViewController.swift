@@ -23,23 +23,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 見た目を丸くする, 枠線つける, 枠の色を青にする
         wrapView.layer.cornerRadius = 120
         wrapView.layer.borderWidth = 4
         wrapView.layer.borderColor = UIColor.blue.cgColor
         wrapView.clipsToBounds = true
         
+        // waveViewの設定を書いていく
         waveView = WaveAnimationView(
             frame: CGRect(x: wrapView.bounds.origin.x + 4,
                           y: wrapView.bounds.origin.y + 4,
                           width: wrapView.bounds.size.width - 8,
                           height: wrapView.bounds.size.height - 8),
             color: UIColor.blue.withAlphaComponent(0.5))
+        
+        // 見た目を丸くする, 枠線つける, 枠の色を青にする
         waveView.layer.cornerRadius = waveView.bounds.size.width / 2
         waveView.layer.borderWidth = 4
         waveView.layer.borderColor = UIColor.white.cgColor
         waveView.clipsToBounds = true
         
+        // waveViewをwrapViewnに重ねる
         wrapView.addSubview(waveView)
+        
+        // 波のアニメーションをスタート
         waveView.startAnimation()
         
         waterLevel = waveView.progress
